@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLoginSplit.MainPage"
+             Title="">
+    <Grid ColumnDefinitions="*,*">
+        <Grid Grid.Column="0">
+            <Image Source="login_bg.jpg" Aspect="AspectFill"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Padding="48" Margin="0,50,0,0">
+            <Grid RowDefinitions="Auto,*,Auto">
+                <Border>
+                    <VerticalStackLayout>
+                        <VerticalStackLayout Spacing="12">
+                            <Image Source="logo.jpg" HeightRequest="48"/>
+                            <Label Text="Bem-vindo(a)!" FontSize="23"/>
+                            <Label Text="Faça login para continuar." FontSize="15"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Spacing="16" Margin="0,24,0,0">
+                            <VerticalStackLayout>
+                                <Label Text="Email" FontSize="14"/>
+                                <Entry x:Name="EmailEntry" Placeholder="Digite seu email" Keyboard="Email" />
+                            </VerticalStackLayout>
+                            <VerticalStackLayout>
+                                <Label Text="Senha" FontSize="14"/>
+                                <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                                    <Entry x:Name="SenhaEntry" Placeholder="*****" IsPassword="True"/>
+                                    <ImageButton Grid.Column="1" Source="eye.png" BackgroundColor="Transparent" Clicked="OnTogglePassword" HeightRequest="24" WidthRequest="24"/>
+                                </Grid>
+                            </VerticalStackLayout>
+                            <Button Text="Entrar" Clicked="OnLoginClicked"/>
+                            <HorizontalStackLayout Spacing="6" HorizontalOptions="Center">
+                                <Label Text="Ao entrar, você concorda com os"/>
+                                <Button Style="{StaticResource termos}" Text="Termos de Uso" Clicked="OnShowTerms"/>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+                <HorizontalStackLayout Grid.Row="2" Spacing="6" VerticalOptions="End" HorizontalOptions="Center">
+                    <Label Text="@ 2025"/>
+                    <Label Text="MauiLoginSplit"/>
+                </HorizontalStackLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

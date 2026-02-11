@@ -42,8 +42,10 @@ dotnet workload install maui
 ## 📥 Como Obter o Projeto
 
 ### Opção 1 — Git (recomendado)
+```bash
 - `git clone https://github.com/seu-usuario/seu-repo.git`
 - `cd seu-repo`
+```
 
 ### Opção 2 — Download
 - Baixe o arquivo **.zip** do repositório
@@ -82,6 +84,7 @@ Este projeto utiliza a abordagem **Code-Behind** simples para a lógica, em vez 
 
 ## 📂 Estrutura do Projeto
 
+```text
 /MauiLoginSplit
 ├─ Resources/
 │  ├─ Images/
@@ -94,6 +97,7 @@ Este projeto utiliza a abordagem **Code-Behind** simples para a lógica, em vez 
 │     └─ Styles.xaml      # Estilos globais da UI
 ├─ MainPage.xaml          # Interface de Usuário (Layout Split)
 └─ MainPage.xaml.cs       # Lógica (Code-Behind) da tela de login
+```
 
 ---
 

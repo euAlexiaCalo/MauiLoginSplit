@@ -13,6 +13,9 @@ Projeto de exemplo em **.NET MAUI** focado na criação de uma tela de login res
 
 O objetivo é demonstrar o uso de recursos de UI e interatividade básica em aplicações .NET MAUI.
 
+### 🖼️ Preview do Layout
+![Tela de Login Split Screen](screenshots/capturaMauiLoginSplit.png)
+
 O app contém:
 - Um layout dividido em duas colunas (`Grid` com `ColumnDefinitions="*,*"`).
 - Um painel de fundo (imagem) em uma coluna.
